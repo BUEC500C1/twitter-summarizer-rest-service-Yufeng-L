@@ -10,8 +10,8 @@ Enter your username and you can get a zip file of videos. Unzip and you can get 
 ## Launch on AWS ec2:
 
 please visit the following IPv4 public IP address deployed on AWS: <br/>
-18.220.205.212 <br/>
-(Instance is currently stopped until noticed) 
+http://ec2-18-220-205-212.us-east-2.compute.amazonaws.com <br/>
+(Server is currently stopped until noticed) 
 
 ## Web Page
 ![webpage](https://github.com/BUEC500C1/twitter-summarizer-rest-service-Yufeng-L/blob/master/webpage.png)
