@@ -15,16 +15,16 @@ def root():
 @app.route('/', methods=['POST'])
 def upload():
     user1 = request.form['user1']  # getting usernames
-    user2 = request.form['user2']
-    user3 = request.form['user3']
+    # user2 = request.form['user2']
+    # user3 = request.form['user3']
  
     tweet_keyword = []
     if user1 != "":
         tweet_keyword.append(user1)
-    if user2 != "":
-        tweet_keyword.append(user2)
-    if user3 != "":
-        tweet_keyword.append(user3)
+    # if user2 != "":
+    #     tweet_keyword.append(user2)
+    # if user3 != "":
+    #     tweet_keyword.append(user3)
 
     queue_Sys.handler(tweet_keyword,3)
     
@@ -37,4 +37,4 @@ def upload():
     return send_file('videos.zip', mimetype='zip',attachment_filename='videos.zip',as_attachment=True)
 
 if __name__ == '__main__':
-	app.run(host = '0.0.0.0',port=80,debug=True)
+	app.run(host = '127.0.0.0',port=80,debug=True)
