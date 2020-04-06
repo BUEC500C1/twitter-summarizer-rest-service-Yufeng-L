@@ -37,4 +37,4 @@ def upload():
     return send_file('videos.zip', mimetype='zip',attachment_filename='videos.zip',as_attachment=True)
 
 if __name__ == '__main__':
-	app.run(host = '127.0.0.0',port=80,debug=True)
+	app.run(host = '0.0.0.0',port=80,debug=True)
